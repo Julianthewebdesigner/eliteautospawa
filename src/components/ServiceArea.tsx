@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 import { MapPin, Navigation } from "lucide-react";
 
 const areas = [
-  "Seattle", "Kent", "Bellevue", "Kirkland",
+  "Seattle", "Burien", "Bellevue", "Kirkland",
   "Redmond", "Renton", "Federal Way", "Tacoma",
   "Shoreline", "Lynnwood", "Everett", "Issaquah",
 ];
@@ -42,7 +42,7 @@ export default function ServiceArea() {
             </h2>
 
             <p className="text-slate-400 text-lg leading-relaxed mb-10 max-w-[440px]">
-              Based in Kent, WA, we serve the entire Puget Sound region.
+              Based in Burien, WA, we serve the entire Puget Sound region.
               Whether you're at home in Bellevue or at the office in downtown Seattle,
               our fully-equipped mobile unit is ready.
             </p>
@@ -71,7 +71,7 @@ export default function ServiceArea() {
               </div>
               <div>
                 <p className="font-bold text-white text-sm mb-0.5">No Travel Fees</p>
-                <p className="text-xs text-slate-500">For locations within 25 miles of Kent, WA.</p>
+                <p className="text-xs text-slate-500">For locations within 25 miles of Burien, WA.</p>
               </div>
             </div>
           </motion.div>
@@ -121,7 +121,7 @@ export default function ServiceArea() {
                 Kirkland
               </div>
               <div className="absolute bottom-10 left-10 glass px-3 py-1.5 rounded-full text-[10px] font-bold text-white uppercase tracking-widest border border-white/10">
-                Kent
+                Burien
               </div>
               <div className="absolute bottom-10 right-10 glass px-3 py-1.5 rounded-full text-[10px] font-bold text-white uppercase tracking-widest border border-white/10">
                 Renton

@@ -8,7 +8,9 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Gallery from "./components/Gallery";
 import Services from "./components/Services";
+import AddOns from "./components/AddOns";
 import Pricing from "./components/Pricing";
+import Policies from "./components/Policies";
 import ServiceArea from "./components/ServiceArea";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
@@ -29,7 +31,9 @@ export default function App() {
           <About />
           <Gallery />
           <Services />
+          <AddOns />
           <Pricing />
+          <Policies />
           <ServiceArea />
           <Contact />
         </main>

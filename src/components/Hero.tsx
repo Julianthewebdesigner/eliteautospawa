@@ -1,7 +1,7 @@
 import { motion } from "motion/react";
 import { ArrowUpRight, Star } from "lucide-react";
 
-const MAIN   = "/images/gallery/hero%20section/Main%20image.webp";
+const MAIN   = "/images/gallery/hero%20section/detail.avif";
 const BADGE  = "/images/gallery/hero%20section/Close%20up.jpeg";
 const CARD_L = "/images/gallery/work/1.jpeg";
 const CARD_R = "/images/gallery/work/Your-Premier-Car-Detailing-Destination-in-Kent-WA-Image-01-Detail-Central-2024.jpg";
@@ -96,7 +96,7 @@ export default function Hero() {
             <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-blue-400" />
           </span>
           <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-300">
-            Kent, WA · Now Booking
+            Burien, WA · Now Booking
           </span>
         </div>
         <div>

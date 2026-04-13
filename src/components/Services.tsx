@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { Sparkles, Shield, Star, Check } from "lucide-react";
+import { Sparkles, Shield, Star, Check, Zap, Clock } from "lucide-react";
 
 const DETAIL_IMG = "/images/gallery/work/detailing.webp";
 const BMW_IMG    = "/images/gallery/hero%20section/BMW.avif";
@@ -137,6 +137,42 @@ export default function Services() {
 
           </div>
         </div>
+
+        {/* ── Coming Soon: Paint Correction & Window Tint ── */}
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.15, duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+          className="mt-6 relative rounded-[2rem] p-8 border border-blue-500/20 bg-gradient-to-br from-blue-500/5 via-[#0d0d0f] to-[#0d0d0f] overflow-hidden group"
+        >
+          {/* corner glow */}
+          <div className="absolute top-0 left-0 w-72 h-40 bg-blue-500/8 rounded-full blur-3xl -ml-20 -mt-10 group-hover:bg-blue-500/14 transition-colors duration-700" />
+
+          <div className="relative z-10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+            <div className="flex items-center gap-5">
+              <div className="w-14 h-14 rounded-2xl bg-blue-500/10 border border-blue-500/25 flex items-center justify-center shrink-0">
+                <Zap className="text-blue-400" size={24} />
+              </div>
+              <div>
+                <div className="flex items-center gap-3 flex-wrap mb-1">
+                  <h3 className="text-xl font-black text-white">Paint Correction &amp; Window Tint</h3>
+                  <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-500/12 border border-blue-500/30 text-[10px] font-bold uppercase tracking-[0.2em] text-blue-400">
+                    <Clock size={9} />
+                    Coming Soon
+                  </span>
+                </div>
+                <p className="text-slate-400 text-sm max-w-lg">
+                  Professional-grade paint correction and precision window tinting services — launching soon to restore your vehicle's finish and protect your interior from UV damage.
+                </p>
+              </div>
+            </div>
+            <div className="shrink-0 px-5 py-2.5 rounded-xl border border-blue-500/20 bg-blue-500/8 text-blue-400 text-xs font-bold uppercase tracking-widest whitespace-nowrap">
+              Stay Tuned
+            </div>
+          </div>
+        </motion.div>
+
       </div>
 
       {/* bottom divider */}

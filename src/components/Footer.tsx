@@ -23,7 +23,7 @@ export default function Footer() {
             </div>
 
             <p className="text-slate-500 max-w-sm leading-relaxed mb-8 text-sm">
-              Premium mobile auto detailing in Kent, Seattle, and surrounding areas.
+              Premium mobile auto detailing in Burien, Seattle, and surrounding areas.
               Professional-grade care delivered directly to your location.
             </p>
 
@@ -76,7 +76,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3 text-slate-500 text-sm">
                 <MapPin size={15} className="text-blue-500 shrink-0" />
-                Kent &amp; Seattle, WA
+                Burien &amp; Seattle, WA
               </li>
             </ul>
           </div>
