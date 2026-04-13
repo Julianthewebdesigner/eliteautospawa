@@ -31,8 +31,8 @@ export default function Hero() {
         style={{ backgroundImage: GRAIN, backgroundSize: "200px 200px" }}
       />
 
-      {/* Ambient glows */}
-      <div className="pointer-events-none absolute inset-0 z-0">
+      {/* Ambient glows — desktop only */}
+      <div className="hidden md:block pointer-events-none absolute inset-0 z-0">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[900px] h-[600px] bg-blue-900/25 rounded-full blur-[200px]" />
         <div className="absolute top-[15%] right-[10%] w-[500px] h-[400px] bg-blue-700/10 rounded-full blur-[140px]" />
       </div>
@@ -41,7 +41,7 @@ export default function Hero() {
       <motion.div
         initial={{ opacity: 0, y: 18 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1.5, ease: [0.22, 1, 0.36, 1] }}
+        transition={{ duration: 0.75, ease: [0.22, 1, 0.36, 1] }}
         className="pointer-events-none select-none absolute z-10 inset-x-0 flex justify-center overflow-hidden"
         style={{ top: "13%" }}
       >
@@ -65,7 +65,7 @@ export default function Hero() {
       <motion.div
         initial={{ opacity: 0, scale: 1.05 }}
         animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 1.8, ease: [0.22, 1, 0.36, 1] }}
+        transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
         className="absolute z-20 inset-x-0"
         style={{ top: 0, bottom: "32%" }}
       >
@@ -73,6 +73,8 @@ export default function Hero() {
           src={MAIN}
           alt="Elite Auto Spa premium detailing"
           className="w-full h-full object-cover object-center"
+          fetchPriority="high"
+          decoding="async"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-[#050505]/80 via-transparent to-[#050505]/80" />
         <div className="absolute inset-0 bg-gradient-to-b from-[#050505]/50 via-transparent to-[#050505]" />
@@ -86,7 +88,7 @@ export default function Hero() {
       <motion.div
         initial={{ opacity: 0, x: -28 }}
         animate={{ opacity: 1, x: 0 }}
-        transition={{ delay: 0.55, duration: 1, ease: [0.22, 1, 0.36, 1] }}
+        transition={{ delay: 0.3, duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
         className="hidden md:flex absolute z-30 flex-col gap-4"
         style={{ top: "20%", left: "4%" }}
       >
@@ -113,7 +115,7 @@ export default function Hero() {
       <motion.div
         initial={{ opacity: 0, x: 28 }}
         animate={{ opacity: 1, x: 0 }}
-        transition={{ delay: 0.65, duration: 1, ease: [0.22, 1, 0.36, 1] }}
+        transition={{ delay: 0.35, duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
         className="hidden md:flex absolute z-30 flex-col items-end gap-3"
         style={{ top: "16%", right: "4%" }}
       >
@@ -140,7 +142,7 @@ export default function Hero() {
           </div>
         </a>
         <div className="w-[68px] h-[68px] rounded-xl overflow-hidden border border-white/10 shadow-xl">
-          <img src={BADGE} alt="Ferrari detail" className="w-full h-full object-cover" />
+          <img src={BADGE} alt="Ferrari detail" className="w-full h-full object-cover" loading="lazy" decoding="async" />
         </div>
       </motion.div>
 
@@ -150,7 +152,7 @@ export default function Hero() {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 1.1, duration: 0.8 }}
+          transition={{ delay: 0.55, duration: 0.5 }}
           className="flex items-center justify-center gap-8 mb-6"
         >
           {stats.map(({ value, label }) => (
@@ -167,13 +169,13 @@ export default function Hero() {
           <motion.div
             initial={{ opacity: 0, y: 44 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.82, duration: 0.85, ease: [0.22, 1, 0.36, 1] }}
+            transition={{ delay: 0.4, duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
           >
             <div
               className="w-[158px] rounded-xl overflow-hidden border border-white/12"
               style={{ background: "rgba(8,8,12,0.65)", backdropFilter: "blur(14px)" }}
             >
-              <img src={CARD_L} alt="Car detailing" className="w-full h-[96px] object-cover" />
+              <img src={CARD_L} alt="Car detailing" className="w-full h-[96px] object-cover" loading="lazy" decoding="async" />
               <div className="px-3 py-2.5 flex items-center justify-between">
                 <p className="text-[9px] font-bold uppercase tracking-widest text-slate-400">Exterior Detail</p>
                 <div className="w-4 h-4 rounded-full bg-blue-500/20 border border-blue-400/30 flex items-center justify-center">
@@ -187,7 +189,7 @@ export default function Hero() {
           <motion.div
             initial={{ opacity: 0, y: 28 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.58, duration: 0.95, ease: [0.22, 1, 0.36, 1] }}
+            transition={{ delay: 0.3, duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
             className="flex flex-col items-start pb-1"
           >
             <div className="flex items-center gap-2 mb-2">
@@ -206,14 +208,14 @@ export default function Hero() {
           <motion.div
             initial={{ opacity: 0, y: 44 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.92, duration: 0.85, ease: [0.22, 1, 0.36, 1] }}
+            transition={{ delay: 0.45, duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
             className="flex justify-end"
           >
             <div
               className="w-[158px] rounded-xl overflow-hidden border border-white/12"
               style={{ background: "rgba(8,8,12,0.65)", backdropFilter: "blur(14px)" }}
             >
-              <img src={CARD_R} alt="Paint correction" className="w-full h-[96px] object-cover" />
+              <img src={CARD_R} alt="Paint correction" className="w-full h-[96px] object-cover" loading="lazy" decoding="async" />
               <div className="px-3 py-2.5 flex items-center justify-between">
                 <p className="text-[9px] font-bold uppercase tracking-widest text-slate-400">Paint Correction</p>
                 <div className="w-4 h-4 rounded-full bg-blue-500/20 border border-blue-400/30 flex items-center justify-center">
@@ -231,7 +233,7 @@ export default function Hero() {
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.6, duration: 1, ease: [0.22, 1, 0.36, 1] }}
+        transition={{ delay: 0.3, duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
         className="md:hidden absolute z-30 inset-x-0 bottom-0 px-5 pb-10 flex flex-col items-center gap-3"
       >
         {/* Stats row */}

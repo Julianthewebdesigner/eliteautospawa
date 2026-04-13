@@ -80,6 +80,8 @@ export default function Gallery() {
                 src={img.src}
                 alt={img.label}
                 className="w-full h-full object-cover group-hover:scale-[1.06] transition-transform duration-700"
+                loading="lazy"
+                decoding="async"
               />
 
               {/* overlay on hover */}

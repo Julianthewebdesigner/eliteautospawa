@@ -67,7 +67,7 @@ export default function ServiceArea() {
             {/* convenience badge */}
             <div className="flex items-center gap-5 p-5 rounded-3xl border border-white/8 bg-[#0d0d0f]">
               <div className="w-12 h-12 rounded-2xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center shrink-0">
-                <Navigation className="text-blue-400 animate-pulse" size={20} />
+                <Navigation className="text-blue-400" size={20} />
               </div>
               <div>
                 <p className="font-bold text-white text-sm mb-0.5">No Travel Fees</p>
@@ -103,8 +103,8 @@ export default function ServiceArea() {
 
               {/* center pulse */}
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-blue-500/10 rounded-full animate-ping" />
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-20 h-20 bg-blue-500/20 rounded-full blur-xl" />
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-20 h-20 bg-blue-500/10 rounded-full animate-ping" />
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-blue-500/15 rounded-full blur-lg" />
                 <div className="relative z-10 w-14 h-14 rounded-full bg-blue-500/20 border border-blue-500/40 flex items-center justify-center">
                   <MapPin size={24} className="text-blue-400" />
                 </div>

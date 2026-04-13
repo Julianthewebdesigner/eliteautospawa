@@ -38,15 +38,18 @@
 }
 
 .animate-float {
+  will-change: transform;
   animation: float 6s ease-in-out infinite;
 }
 
 @keyframes pulse-glow {
-  0%, 100% { opacity: 0.5; filter: blur(40px); }
-  50% { opacity: 0.8; filter: blur(60px); }
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 0.8; }
 }
 
 .bg-glow {
+  filter: blur(40px);
+  will-change: opacity;
   animation: pulse-glow 8s ease-in-out infinite;
 }
 
@@ -56,5 +59,29 @@
 }
 
 .shimmer {
+  will-change: transform;
   animation: shimmer 2.5s infinite;
+}
+
+/* ── Mobile: remove expensive backdrop-filter blurs ── */
+@media (max-width: 767px) {
+  .glass {
+    background: rgba(255, 255, 255, 0.09) !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+  .glass-dark {
+    background: rgba(0, 0, 0, 0.65) !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+}
+
+/* ── Respect reduced-motion preference ── */
+@media (prefers-reduced-motion: reduce) {
+  .animate-float,
+  .bg-glow,
+  .shimmer {
+    animation: none !important;
+  }
 }

@@ -18,8 +18,8 @@ import Footer from "./components/Footer";
 export default function App() {
   return (
     <div className="relative min-h-screen bg-[#080808] selection:bg-blue-500/30">
-      {/* Global Background Glows */}
-      <div className="fixed top-0 left-0 w-full h-full pointer-events-none z-0">
+      {/* Global Background Glows — desktop only (expensive on mobile) */}
+      <div className="hidden md:block fixed top-0 left-0 w-full h-full pointer-events-none z-0">
         <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-blue-700/8 rounded-full blur-[120px]" />
         <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-blue-900/6 rounded-full blur-[120px]" />
       </div>

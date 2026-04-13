@@ -16,6 +16,8 @@ export default function Footer() {
                 src={LOGO}
                 alt="Elite Auto Spa WA logo"
                 className="h-12 w-12 rounded-xl object-cover object-center"
+                loading="lazy"
+                decoding="async"
               />
               <span className="font-black text-xl tracking-tight chrome-text">
                 ELITE AUTO SPA <span className="text-blue-400">WA</span>

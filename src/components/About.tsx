@@ -48,6 +48,8 @@ export default function About() {
                 src={MAIN_IMG}
                 alt="Professional car detailing"
                 className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-700"
+                loading="lazy"
+                decoding="async"
               />
               {/* gradient overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
@@ -124,6 +126,8 @@ export default function About() {
                   src={DETAIL_IMG}
                   alt="Luxury badge close-up"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
               <div className="rounded-2xl overflow-hidden aspect-[4/3]">
@@ -131,6 +135,8 @@ export default function About() {
                   src={INTERIOR}
                   alt="Interior detailing"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
             </div>

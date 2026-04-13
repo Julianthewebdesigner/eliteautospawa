@@ -54,7 +54,6 @@ export default function Pricing() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              whileHover={{ y: -6 }}
               className="flex flex-col rounded-[2rem] p-8 border border-white/8 bg-[#0d0d0f] group transition-all"
             >
               <div className="w-14 h-14 rounded-2xl bg-blue-500/10 border border-blue-500/15 flex items-center justify-center mb-6 text-blue-400 group-hover:bg-blue-500/20 transition-colors">

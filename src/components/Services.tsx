@@ -101,6 +101,8 @@ export default function Services() {
                 src={BMW_IMG}
                 alt="BMW detail"
                 className="w-full h-full object-cover group-hover:scale-[1.05] transition-transform duration-700"
+                loading="lazy"
+                decoding="async"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
 
