@@ -23,7 +23,7 @@ const stats = [
 
 export default function Hero() {
   return (
-    <section className="relative h-screen overflow-hidden bg-[#050505]">
+    <section className="relative min-h-[100svh] overflow-hidden bg-[#050505]">
 
       {/* Film grain */}
       <div
@@ -232,7 +232,7 @@ export default function Hero() {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.6, duration: 1, ease: [0.22, 1, 0.36, 1] }}
-        className="md:hidden absolute z-30 inset-x-0 bottom-0 px-5 pb-7 flex flex-col items-center gap-3"
+        className="md:hidden absolute z-30 inset-x-0 bottom-0 px-5 pb-10 flex flex-col items-center gap-3"
       >
         {/* Stats row */}
         <div className="flex items-center gap-6">

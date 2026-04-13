@@ -93,7 +93,7 @@ export default function Policies() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-10 md:mb-16"
         >
           <p className="text-xs font-bold text-blue-500 uppercase tracking-[0.3em] mb-4">Transparency First</p>
           <h2 className="text-4xl md:text-6xl font-black chrome-text mb-6">OUR POLICIES</h2>

@@ -43,7 +43,7 @@ export default function About() {
             transition={{ duration: 0.8 }}
             className="relative"
           >
-            <div className="relative h-full min-h-[280px] md:min-h-[520px] rounded-[2rem] overflow-hidden group">
+            <div className="relative h-full min-h-[260px] md:min-h-[360px] lg:min-h-[500px] rounded-[2rem] overflow-hidden group">
               <img
                 src={MAIN_IMG}
                 alt="Professional car detailing"

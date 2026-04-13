@@ -66,7 +66,7 @@ export default function Gallery() {
         </div>
 
         {/* masonry-style grid */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 auto-rows-[180px] md:auto-rows-[220px] lg:auto-rows-[240px] gap-3 md:gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 auto-rows-[180px] md:auto-rows-[210px] lg:auto-rows-[240px] gap-3 md:gap-4">
           {WORK_IMAGES.map((img, i) => (
             <motion.div
               key={i}

@@ -18,7 +18,7 @@ export default function Contact() {
           {/* inner glow */}
           <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-transparent pointer-events-none" />
 
-          <div className="grid lg:grid-cols-2 gap-16 relative z-10">
+          <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 relative z-10">
 
             {/* ── LEFT: info ── */}
             <div>

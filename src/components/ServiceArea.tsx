@@ -17,7 +17,7 @@ export default function ServiceArea() {
       <div className="pointer-events-none absolute left-0 bottom-0 w-[500px] h-[500px] bg-blue-700/6 rounded-full blur-[160px]" />
 
       <div className="max-w-7xl mx-auto relative z-10">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
 
           {/* ── LEFT: copy ── */}
           <motion.div

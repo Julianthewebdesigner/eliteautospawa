@@ -8,7 +8,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 px-6 py-4">
+    <nav className="fixed top-0 left-0 right-0 z-50 px-3 py-3 sm:px-6 sm:py-4">
       <div className="max-w-7xl mx-auto flex items-center justify-between glass rounded-2xl px-5 py-2.5">
 
         {/* ── Brand ── */}
@@ -76,7 +76,7 @@ export default function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -12 }}
             transition={{ duration: 0.2 }}
-            className="md:hidden absolute top-24 left-6 right-6 glass-dark rounded-2xl p-6 flex flex-col gap-4 border border-white/8"
+            className="md:hidden absolute top-[4.5rem] left-3 right-3 sm:left-6 sm:right-6 glass-dark rounded-2xl p-6 flex flex-col gap-4 border border-white/8"
           >
             {["Services", "Pricing", "Gallery", "About", "Contact"].map((item) => (
               <a

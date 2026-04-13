@@ -30,7 +30,7 @@ export default function Pricing() {
       <div className="max-w-7xl mx-auto relative z-10">
 
         {/* header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-10 md:mb-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -44,7 +44,7 @@ export default function Pricing() {
           </motion.div>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6 items-stretch">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
 
           {/* Standard plans */}
           {plans.map((plan, i) => (
@@ -92,7 +92,7 @@ export default function Pricing() {
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
             whileHover={{ y: -6 }}
-            className="relative rounded-[2rem] p-8 flex flex-col overflow-hidden bg-gradient-to-br from-blue-700 via-blue-600 to-blue-800 shadow-2xl shadow-blue-500/20 group"
+            className="relative rounded-[2rem] p-8 flex flex-col overflow-hidden bg-gradient-to-br from-blue-700 via-blue-600 to-blue-800 shadow-2xl shadow-blue-500/20 group sm:col-span-2 lg:col-span-1"
           >
             {/* animated shine */}
             <div className="absolute inset-0 overflow-hidden">
